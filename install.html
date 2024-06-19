@@ -1,1 +1,100 @@
-install.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapiD Vision Installer</title>
+    <style>
+        /* Add CSS styling here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            height: 100vh; /* viewport height */
+            margin: 20;
+        }
+
+
+        h1 {
+            font-size: 16px;
+            
+            color: #ffffff;
+        }
+
+        .header-container {
+            margin:20px;
+            display: flex;
+            align-items: center; /* This will vertically center the items if they have different heights */
+            gap: 20px; /* Creates a gap between the header and image. Adjust as needed. */
+        }
+
+        .top-left-image {
+            background: #000000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            margin: 20px;
+            z-index: 1; /* Ensure it's above the background */
+        }
+
+        .logo{
+            margin: 10px;
+            width:40px;
+            height:40px
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            background-color: #14A8F7;
+            color: #ffffff;
+            margin:5px;
+            min-width:250px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+    <script>
+
+
+        function downloadClickOnce() {
+            fetch('https://raw.githubusercontent.com/RapiD-Engineering/RapiDVisionExplorerReleases/main/published/RapiDVision.Explorer.Desktop.application')
+                .then(response => response.blob())
+                .then(blob => {
+                    const blobUrl = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = blobUrl;
+                    a.download = 'RapiDVision.Explorer.Desktop.application';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(blobUrl);
+                })
+                .catch(error => {
+                    console.error("There was an error fetching the file:", error);
+                });
+        }
+    </script>
+</head>
+<body>
+    <img class="top-left-image" src="RAPIDGRIJS.png" alt="Top Left Image">
+    <div class="header-container">
+        <h1>RapiD Vision Explorer (Client)  </h1>
+        <img class="logo" src="Beeldmerk_RV.ico">
+    </div>
+
+    <button onclick="downloadClickOnce()">Windows x64</button>
+
+</body>
+</html>
