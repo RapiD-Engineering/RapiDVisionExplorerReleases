@@ -15,7 +15,7 @@
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="Application Files\RapiDVision.Explorer.Desktop_1_0_0_29\RapiDVision.Explorer.Desktop.dll.manifest" size="112892">
-      <assemblyIdentity name="RapiDVision.Explorer.Desktop.exe" version="1.0.0.29" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+      <assemblyIdentity name="RapiDVision.Explorer.Desktop.exe" version="1.0.0.28" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
