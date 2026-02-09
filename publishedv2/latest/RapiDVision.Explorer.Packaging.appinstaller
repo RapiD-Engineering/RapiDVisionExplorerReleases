@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<AppInstaller Uri="https://github.com/RapiD-Engineering/RapiDVisionExplorerReleases/releases/download/latest-master/RapiDVision.Explorer.Packaging.appinstaller" Version="4.0.22.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
-  <MainBundle Name="8e7a1e0b-79d2-4aa7-84f1-f4f8eb0df764" Version="4.0.22.0" Publisher="CN=RapiD Engineering, O=RapiD Engineering, STREET=Zuidoostrak, L=Urk, S=Flevoland, C=NL, PostalCode=8321 MA" Uri="https://github.com/RapiD-Engineering/RapiDVisionExplorerReleases/releases/download/latest-master/RapiDVision.Explorer.Packaging_x64.msixbundle" />
+<AppInstaller Uri="https://github.com/RapiD-Engineering/RapiDVisionExplorerReleases/releases/download/latest-master/RapiDVision.Explorer.Packaging.appinstaller" Version="2.0.31.49403" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+  <MainBundle Name="8e7a1e0b-79d2-4aa7-84f1-f4f8eb0df764" Version="2.0.31.49403" Publisher="CN=RapiD Engineering, O=RapiD Engineering, STREET=Zuidoostrak, L=Urk, S=Flevoland, C=NL, PostalCode=8321 MA" Uri="https://github.com/RapiD-Engineering/RapiDVisionExplorerReleases/releases/download/latest-master/RapiDVision.Explorer.Packaging_x64.msixbundle" />
   <UpdateSettings>
     <OnLaunch HoursBetweenUpdateChecks="0" />
   </UpdateSettings>
