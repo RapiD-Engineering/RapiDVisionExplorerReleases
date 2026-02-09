@@ -60,6 +60,7 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+        
 
             button:hover {
                 background-color: #0056b3;
@@ -85,6 +86,11 @@
                     console.error("There was an error fetching the file:", error);
                 });
         }
+
+        function downloadMSIX() {
+            console.log('no msix implementation');
+           
+        }
     </script>
 </head>
 <body>
@@ -95,6 +101,8 @@
     </div>
 
     <button onclick="downloadClickOnce()">Windows x64</button>
+    <button onclick="downloadMSIX()">Windows x64</button>
 
+    
 </body>
 </html>
